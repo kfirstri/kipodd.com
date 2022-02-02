@@ -24,6 +24,7 @@
         }
 
         .link a {
+            font-size: 1.5rem;
             text-decoration:none;
             color: green;
             text-shadow: 5px 5px 5px #ccc;
@@ -35,30 +36,32 @@
 
         .link a::before{
             /* transition:opacity 0.5s; */
-            transition:padding-right 1s;
+            transition:padding-bottom 1s;
             /* opacity: 0; */
-            content: "🍾 🎊 💙";
+            content: "🍾 🎊 💙 \A"; 
+            display: block; 
         }
 
         .link a::after{
             /* transition:opacity 0.5s; */
-            transition:padding-left 1s;
+            transition:padding-top 1s;
             /* opacity: 0; */
-            content: "💙 🎊 🍾";
+            content: "\A 💙 🎊 🍾";
+            display: block; 
         }
 
         .link a:hover::before{
             /* transition:opacity 0.5s; */
-            transition:padding-right 1s;
+            transition:padding-bottom 1s;
             /* opacity: 1; */
-            padding-right: 80px;
+            padding-bottom: 50px;
         }
 
         .link a:hover::after{
             /* transition:opacity 0.5s; */
-            transition:padding-left 1s;
+            transition:padding-top 1s;
             /* opacity: 1; */
-            padding-left: 80px;
+            padding-top: 50px;
         }
 
     </style>
