@@ -20,14 +20,58 @@
         }
 
         .content img {
-            width: 70%;
+            width: 50%;
         }
+
+        .link a {
+            text-decoration:none;
+            color: green;
+            text-shadow: 5px 5px 5px #ccc;
+        }
+
+        .link a:hover{
+            text-shadow: 4px 4px 4px #ccc;
+        }
+
+        .link a::before{
+            /* transition:opacity 0.5s; */
+            transition:padding-right 1s;
+            /* opacity: 0; */
+            content: "🍾 🎊 💙";
+        }
+
+        .link a::after{
+            /* transition:opacity 0.5s; */
+            transition:padding-left 1s;
+            /* opacity: 0; */
+            content: "💙 🎊 🍾";
+        }
+
+        .link a:hover::before{
+            /* transition:opacity 0.5s; */
+            transition:padding-right 1s;
+            /* opacity: 1; */
+            padding-right: 80px;
+        }
+
+        .link a:hover::after{
+            /* transition:opacity 0.5s; */
+            transition:padding-left 1s;
+            /* opacity: 1; */
+            padding-left: 80px;
+        }
+
     </style>
 </head>
 <body>
     <div class="content">
         <div class="text">Hi Kipodd 🤓</div>
         <img src="hedge.jpg" alt="lovelove">
+        <div class="link">
+            <a href="bday.html">
+                🎉 Birthday 🎉
+            </a>
+        </span>
     </div>
 </body>
 </html>
